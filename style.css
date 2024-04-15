@@ -1,0 +1,50 @@
+/* Adjacent Sibling Combinator (+) */
+h3 + p {
+    color: darkorange;
+    font-family: cursive;
+    letter-spacing: 4px;
+    font-weight: 800;
+} /* ?? for some reason letter-spacing won't work
+   if I move it to another spot in my code.  */
+
+/* General Sibling Combinator (~) */
+h2 ~ p {
+    text-indent: 30px;
+}
+
+p::first-letter {
+    initial-letter: 1.5;
+}
+
+/* Child Combinator (>) */
+div > h2 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: cornflowerblue;
+    text-shadow: 1px 1px 2px cornsilk;
+}
+
+div > h3 {
+    font-family:  "Mate SC", serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+/* Descendant Combinator ( ) */
+div div {
+    width: device-width;
+    border: 1px solid rgb(153, 151, 151);
+    box-shadow: 9px 6px 4px gold;
+    padding: 5px;
+    background-color: cornsilk;
+}
+
+* {
+    text-indent: 15px;
+}
+
+header {
+    text-align: center;
+}

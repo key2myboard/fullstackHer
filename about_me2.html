@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yarmin Reyes">
+        <meta name="description" content="An html document to share a little about me">
+        <title>About Yarmin</title>
+        
+        <script>
+            //placeholder for JavaScript
+        </script>
+
+        <style>
+            .round-image{
+                border-radius: 50%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="">
+    </head>
+    <body> 
+        <section id="content_section">
+            <header>
+                <!-- Place a logo, and/or site title. May also hold the navigation? -->
+                <img src="https://www.npower.org/wp-content/uploads/2019/02/npower-logo.svg" alt="npower logo" style="text-align: center;" width="15%">
+                <!-- Best practice to define width & height of images -->
+                <nav> <!-- moved nav bar to header -->
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+        </section>
+        <main> <!-- this will be where I place the main content -->
+            <div id="hello intro" style="text-align: center;"> <!-- applied text-centering style to div rather than each element here-->
+                <h1>Hello! Welcome!</h1>
+                <h4>About Me</h4>
+                <img src="/hw02_css/assets/profile_img.jpg" alt="Yarmin profile picture" width="20%" class="round-image">
+                <p>I am <strong>Yarmin</strong>, a current student of the Path2TECH program at NPower where I am learning fullstack developement. Let's go <strong>FullstackHERS</strong>! On an career pursuit to become a DevOps Engineer I hope to gain mastery in the tools in my profession.</p>
+            </div>
+
+            <div id="about_me">
+                <article>
+                    <h3>Let's play Two Truths and One Lie</h3>
+                    <p><em>Can you guess which one of the three following statements is the lie?</em></p>
+                    <p>1. I love coffee.</p>
+                    <p>2. I have a Tamagotchi pet.<br><br>
+                       3. I have eleven siblings.</p>
+                </article>
+                <form action="">
+                    <label for="2_truths_1_lie"><strong>Which one is the lie?</strong></label>
+                    <select name="game" id="2_truths_1_lie">
+                        <option value="loves coffee">1. Yarmin loves coffee</option>
+                        <option value="plays Tamagotchi">2. Yarmin plays with Tamagotchi</option>
+                        <option value="3. Yarmin has eleven siblings">3. Yarmin has 11 siblings</option>
+                    </select>
+                </form>
+            </div>
+
+            <aside>
+                <h3>Additional, facts about me:</h3>
+                <p>One strength I posses is my <strong>organizational skills</strong>. I've helped family members and friends organize their rooms/apartments and oraganize for events. I am about the logical placement of things and details that spark joy. I really enjoy realizing the ends results and the mental clarity it provides.<br><br>
+                My favorite foods are <em>epis sauce on everything</em> and <em>chuleta with tostones</em> (ribs with fried plantains).</p>
+            </aside>
+            <div id="unordered">
+                <h3>My Skills</h3>
+                <ul>
+                    <li>AWS Cloud</li>
+                    <li>Linux</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+
+            <div id="ordered">
+                <h3>Professional Interests</h3>
+                <ol>
+                    <li>Cloud Support</li>
+                    <li>QA Tester</li>
+                    <li>IT Support</li>
+                </ol>
+            </div>
+            
+            <div id="table">
+                <h3>Website Ideas</h3>
+                <table border="">
+                    <tr>
+                        <th>Idea</th>
+                        <th>Website Idea</th>
+                        <th>Descrition</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td>Idea A</td>
+                        <td>Recycling Web app</td>
+                        <td>Allows you to scan food product barcode to learn how or where you can recycle its packaging</td>
+                        <td>May need user's location so information can be specific. <br>
+                        Will need to do research on how various materials are recycled. <br>
+                        Can also include an info page on how to shop package-free. <br>
+                        Would I use or create a database on how what city deems recyclable?</td>
+                    </tr>
+                    <tr>
+                        <td>Idea B</td>
+                        <td>Clothes Recycling</td>
+                        <td>Enables users to locate clothes drop off locations, thrift stores to shop at or sell, and more</td>
+                        <td>Focused on enabling users to part with clothes and textiles in a concious manner.</td>
+                    </tr>
+                    <tr>
+                        <td>Idea C</td>
+                        <td>Blog for Parents w Kids</td>
+                        <td>Enables parents to learn how to set kids up with video games.</td>
+                        <td>Helping your kid with popular games on Xbox can be daunting. <br>
+                            Creating and managing accounts, safety concerns, terminology, avoiding unexpected charges.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <div id="audio">
+            <h3>Audio Provided by Pixabay</h3>
+            <audio controls> <!-- adding "controls is important, why?"-->
+                <source src="/hw2/assets/pixabay_cute_creatures.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+
+        <div id="video">
+            <h3>IFrame/Embeded External Video</h3>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+    </body>
+</html>
